@@ -6,10 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @ApiModel(description = "Details about a movie")
 @Entity
@@ -20,4 +18,6 @@ public class Movie {
     private long id;
     @ApiModelProperty(notes = "A short summary of the movie")
     private String description;
+    @ManyToMany(cascade = CascadeType.ALL)
+    private List<Artist> cast;
 }
