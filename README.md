@@ -33,7 +33,7 @@ http://localhost:8080/h2-console
 
 The JDBC URL is `mem:testdb`
 
-##License
+## License
 
 Released under [the BSD-3-Clause][license].
 
