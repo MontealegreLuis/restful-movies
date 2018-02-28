@@ -1,7 +1,7 @@
 package com.restful.movies.resources;
 
 public enum Gender {
-    MASCULINE,
-    FEMININE,
+    MALE,
+    FEMALE,
     OTHER
 }
