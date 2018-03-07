@@ -16,8 +16,12 @@ import java.util.List;
 public class Movie {
     @Id @GeneratedValue
     private long id;
+
+    private String title;
+
     @ApiModelProperty(notes = "A short summary of the movie")
     private String description;
+
     @ManyToMany(cascade = CascadeType.ALL)
     private List<Artist> cast;
 }
